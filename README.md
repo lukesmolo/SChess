@@ -1,10 +1,10 @@
-#SChess: a simplified version of chess for CLI, with AI
+# SChess: a simplified version of chess for CLI, with AI
 
-####SChess is a simplified version of chess for CLI.
+#### SChess is a simplified version of chess for CLI.
 
 SChess is written in C, and it uses AI implemented by using MinMax algorithm with alpha-beta pruning and fixed depth decided at the beginning of the match.
 
-##Rules
+## Rules
 Rules are the same of chess, even if there are only 10 pieces for each player:
 * 8 Pawns
 * 1 Knight
@@ -16,13 +16,13 @@ Starting positions of pieces are the same as in the picture below:
 
 <img src="/pics/initial_board.jpg" width="180">
 
-##Goal
+## Goal
 The main goal is to obtain a **pawn promotion** without being eaten by the next
 opponent's move, otherwise you can still try to make a **checkmate**.
 
 **Stalemate** case is implemented too, meaning a draw for players.
 
-##Features
+## Features
 * chance to play against AI, choosing which color is AI
 * chance to watch a match between two AI players, each one with a different depth
 * chance to undo (only) the last move
@@ -31,7 +31,7 @@ opponent's move, otherwise you can still try to make a **checkmate**.
 * storing every match a file automatically created
 
 
-##Some Numbers
+## Some Numbers
 
 Memory required is less than 100MB.
 Using i5 CPU, 3,3 GHz, first white move:
@@ -39,7 +39,7 @@ Using i5 CPU, 3,3 GHz, first white move:
 * Depth 5: ~1s, 262980 MinMax calls
 * Depth 7: ~50s, 16906767 MinMax calls
 
-##Usage
+## Usage
 Clone the repository:
 ```
 $ git clone --recursive git@github.com:lukesmolo/SChess.git
@@ -59,10 +59,10 @@ Run the program resuming a previous match:
 $ ./SChess 15:19:26,2016-6-18.chess
 ```
 
-##License
+## License
 SChess is released under the GPLv2.
 
-##TODO
+## TODO
 * take the longest path when AI is going to lose
 * keep track in the match file of undone moves
 * chance to undo more moves
